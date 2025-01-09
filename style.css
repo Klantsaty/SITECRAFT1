@@ -1,0 +1,172 @@
+/* Загальні стилі */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(120deg, #fdfcfb, #e2d1c3);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  animation: bgGradient 15s infinite alternate;
+}
+
+@keyframes bgGradient {
+  0% {
+    background: linear-gradient(120deg, #fdfcfb, #e2d1c3);
+  }
+  100% {
+    background: linear-gradient(120deg, #e2d1c3, #fdfcfb);
+  }
+}
+
+/* Заголовок */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 40px; /* Зменшена висота */
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.4s ease-in-out;
+}
+
+header:hover {
+  background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+}
+
+.hdr-t {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f3f3f3;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  animation: textGlow 2s infinite alternate;
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-lnk {
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 6px 12px;
+  color: #f3f3f3;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.nav-lnk:hover {
+  color: #fff;
+  background: #6c5b7b;
+  border: 2px solid #fff;
+  transform: scale(1.1);
+}
+
+/* Основна частина */
+main {
+  flex: 1;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #243b55;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Форма замовлення */
+.ord-form-f {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background: linear-gradient(to right, #ffd3fe, #ffffff);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ord-form-inp,
+.ord-form-sel,
+.ord-form-txt {
+  padding: 15px;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.ord-form-inp:focus,
+.ord-form-sel:focus,
+.ord-form-txt:focus {
+  outline: none;
+  border-color: #6c5b7b;
+  box-shadow: 0 0 10px rgba(108, 91, 123, 0.5);
+}
+
+.ord-form-btn {
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.ord-form-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(255, 117, 140, 0.4);
+}
+
+/* Підвал */
+footer {
+  background: linear-gradient(to right, #243b55, #141e30);
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 1rem;
+}

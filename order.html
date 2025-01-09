@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SiteCraft</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="hdr">
+      <h1 class="hdr-t">Замовлення сайту</h1>
+      <nav class="nav">
+        <a class="nav-lnk" href="index.html">Головна</a>
+        <a class="nav-lnk" href="buy.html">Купівля сайтів</a>
+        <a class="nav-lnk" href="order.html">Замовлення</a>
+        <a class="nav-lnk" href="about.html">Про нас</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="ord">
+        <h2 class="ord-t">Як замовити сайт?</h2>
+        <p class="ord-tx">
+          Процес замовлення простий і зрозумілий. Просто заповніть форму, і ми
+          зв'яжемося з вами, щоб обговорити всі деталі вашого замовлення. Усі
+          сайти адаптовані під мобільні пристрої, швидко завантажуються та
+          відповідають всім вимогам безпеки.
+        </p>
+        <p class="ord-tx">
+          Наша команда забезпечить вам швидке створення сайту, який буде
+          працювати на вас, залучати більше клієнтів та надавати ефективну
+          підтримку 24/7.
+        </p>
+      </section>
+
+      <section class="ord-form">
+        <h2 class="ord-form-t">Форма замовлення</h2>
+        <form class="ord-form-f" action="#" method="post">
+          <label class="ord-form-lbl" for="name">Ваше ім'я:</label>
+          <input
+            class="ord-form-inp"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Введіть ваше ім'я"
+            required
+          />
+
+          <label class="ord-form-lbl" for="email">Електронна пошта:</label>
+          <input
+            class="ord-form-inp"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Введіть вашу електронну пошту"
+            required
+          />
+
+          <label class="ord-form-lbl" for="phone">Телефон:</label>
+          <input
+            class="ord-form-inp"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Введіть ваш номер телефону"
+            required
+          />
+
+          <label class="ord-form-lbl" for="website">Тип сайту:</label>
+          <select class="ord-form-sel" id="website" name="website" required>
+            <option value="business">Сайт-візитка для бізнесу</option>
+            <option value="ecommerce">Інтернет-магазин</option>
+            <option value="blog">Особистий блог</option>
+            <option value="portfolio">Портфоліо</option>
+            <option value="news">Новинний портал</option>
+            <option value="forum">Форум для спільнот</option>
+            <option value="corporate">Корпоративний сайт</option>
+          </select>
+
+          <label class="ord-form-lbl" for="features">Необхідні функції:</label>
+          <textarea
+            class="ord-form-txt"
+            id="features"
+            name="features"
+            rows="4"
+            placeholder="Опишіть додаткові функції, які вам потрібні"
+          ></textarea>
+
+          <label class="ord-form-lbl" for="budget">Бюджет:</label>
+          <input
+            class="ord-form-inp"
+            type="number"
+            id="budget"
+            name="budget"
+            placeholder="Введіть ваш бюджет на проект"
+            required
+          />
+
+          <button class="ord-form-btn" type="submit">
+            Відправити замовлення
+          </button>
+        </form>
+      </section>
+
+      <section class="ord-info">
+        <h2 class="ord-info-t">Що буде після подачі замовлення?</h2>
+        <p class="ord-info-tx">
+          Після того, як ви надішлете своє замовлення, наша команда зв'яжеться з
+          вами, щоб уточнити всі деталі та відповісти на ваші питання. Ви
+          отримаєте всю необхідну інформацію щодо вибору функціоналу, дизайну,
+          домену та хостингу для вашого сайту.
+        </p>
+        <p class="ord-info-tx">
+          З моменту узгодження всіх деталей почнеться розробка вашого сайту.
+          Зазвичай ми надаємо готовий продукт протягом 3-7 робочих днів, залежно
+          від складності та функціоналу.
+        </p>
+      </section>
+
+      <section class="ord-tips">
+        <h2 class="ord-tips-t">Корисні поради для замовлення</h2>
+        <ul class="ord-tips-lst">
+          <li class="ord-tips-it">
+            <strong>Описуйте всі свої вимоги:</strong> чим більше деталей ви
+            надасте, тим швидше та точніше ми зможемо створити сайт.
+          </li>
+          <li class="ord-tips-it">
+            <strong>Вибір теми:</strong> визначте, яка тема найбільше підходить
+            для вашого бізнесу або проекту.
+          </li>
+          <li class="ord-tips-it">
+            <strong>Технічні вимоги:</strong> якщо у вас є конкретні вимоги до
+            функціоналу сайту (наприклад, інтеграція з платіжними системами),
+            обов'язково вкажіть це в формі.
+          </li>
+          <li class="ord-tips-it">
+            <strong>Бюджет:</strong> зазначте свій бюджет для того, щоб ми могли
+            запропонувати оптимальні варіанти розробки.
+          </li>
+        </ul>
+      </section>
+
+      <section class="ord-faq">
+        <h2 class="ord-faq-t">Часті питання</h2>
+        <div class="ord-faq-grd">
+          <div class="ord-faq-it">
+            <h3 class="ord-faq-it-t">Скільки часу займе розробка сайту?</h3>
+            <p class="ord-faq-it-tx">
+              Час розробки залежить від складності проекту, але ми зазвичай
+              надаємо готовий сайт протягом 3-7 робочих днів.
+            </p>
+          </div>
+          <div class="ord-faq-it">
+            <h3 class="ord-faq-it-t">
+              Чи можна змінювати сайт після його створення?
+            </h3>
+            <p class="ord-faq-it-tx">
+              Так, ви можете змінювати контент та дизайн вашого сайту через
+              адміністративну панель або за допомогою нашої технічної підтримки.
+            </p>
+          </div>
+          <div class="ord-faq-it">
+            <h3 class="ord-faq-it-t">Як ви гарантуєте якість сайту?</h3>
+            <p class="ord-faq-it-tx">
+              Ми проводимо ретельне тестування кожного сайту, щоб забезпечити
+              його стабільну роботу та відповідність усім стандартам.
+            </p>
+          </div>
+          <div class="ord-faq-it">
+            <h3 class="ord-faq-it-t">Чи є підтримка після покупки сайту?</h3>
+            <p class="ord-faq-it-tx">
+              Так, ми надаємо безкоштовну підтримку протягом першого місяця
+              після покупки, а також доступні для подальшої підтримки за окрему
+              плату.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="ftr">
+      <p class="ftr-tx">&copy; 2024 SiteCraft. Усі права захищені.</p>
+    </footer>
+  </body>
+</html>
